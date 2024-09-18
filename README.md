@@ -14,6 +14,10 @@ Role:
 RoleID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор
 RoleName(VARCHAR, NOT NULL) - название роли
 
+Department:
+DepartmentID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор
+DepartmentName(VARCHAR, NOT NULL) - название отдела
+
 phone:  
 PhoneID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор  
 Phone(VARCHAR, UNIQUE, NOT NULL) - номер телефона  
@@ -55,7 +59,7 @@ UserId(FK, INT, NOT NULL) - идентификатор пользователя 
 JobTitle:
 JobTitleID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор
 Title(VARCHAR, NOT NULL) - Название должности
-Department(VARCHAR, NOT NULL) - название отдела
+DepartmentID(FK, INT, NOT NULL) - название отдела
 
 County:  
 CountryID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор  
