@@ -8,7 +8,11 @@ users:
 UserId(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор пользователя  
 Nikname(VARCHAR, UNIQUE, NOT NULL) - никнейм пользователя  
 email(VARCHAR, UNIQUE, NOT NULL) - адрес электронной почты   
-Role(VARCHAR, NOT NULL) - роль пользователя  
+RoleID(FK, INT, NOT NULL) - роль пользователя  
+
+Role:
+RoleID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор
+RoleName(VARCHAR, NOT NULL) - название роли
 
 phone:  
 PhoneID(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор  
