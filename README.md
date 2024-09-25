@@ -3,6 +3,9 @@
 гр. 253504  
 Тема: Зоопарк  
 
+![DB drawio](https://github.com/user-attachments/assets/af8a2185-f3c9-4f37-84ee-d38bed85fe0f)
+
+
 Таблицы:  
 users:  
 UserId(PK, INT, AUTO_INCREMENTED) - уникальный идентификатор пользователя  
